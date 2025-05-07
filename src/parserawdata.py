@@ -49,7 +49,7 @@ def parse_all_email_datasets(base_dir):
     return all_data
 
 if __name__ == "__main__":
-    base_dir = "raw_data"  # Adjust this if your script is not in the root
+    base_dir = "raw_data"  
     emails = parse_all_email_datasets(base_dir)
 
     df = pd.DataFrame(emails, columns=["label", "text"])
